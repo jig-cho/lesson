@@ -1,0 +1,204 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #AAFFC7;
+        }
+
+        /* HERO */
+
+        .hero {
+            height: 90vh;
+            position: relative;
+        }
+
+        .hero-image {
+            position: absolute;
+            inset: 0;
+
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.4),
+                    rgba(0, 0, 0, 0.4)),
+                url('./meditation.png');
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-card {
+            position: absolute;
+
+            right: 70px;
+            bottom: 60px;
+
+            width: 500px;
+
+            background: rgba(255, 255, 255, 0.95);
+
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .hero-tag {
+            display: inline-block;
+
+            background: #dff7e5;
+            color: #166534;
+
+            padding: 6px 14px;
+            border-radius: 20px;
+
+            margin-bottom: 12px;
+        }
+
+        .hero-title {
+            font-size: 32px;
+            line-height: 1.4;
+
+            margin-bottom: 10px;
+        }
+
+        .hero-meta {
+            color: gray;
+        }
+
+        /* MAIN */
+
+        .blog-content {
+            display: flex;
+            gap: 25px;
+
+            padding: 30px;
+        }
+
+        /* SIDEBAR */
+
+        .post-list {
+            width: 250px;
+
+            position: sticky;
+            top: 20px;
+
+            align-self: flex-start;
+        }
+
+        .post-list h3 {
+            margin-bottom: 15px;
+        }
+
+        .post-tab {
+            width: 100%;
+
+            padding: 12px;
+
+            margin-bottom: 10px;
+
+            border: 1px solid #ddd;
+            border-radius: 6px;
+
+            background: white;
+
+            cursor: pointer;
+
+            text-align: left;
+
+            transition: 0.2s;
+        }
+
+        .post-tab:hover {
+            background: #f3fff6;
+        }
+
+        .active-tab {
+            background: #dff7e5;
+            border-color: #7bd19c;
+            font-weight: bold;
+        }
+
+        /* POST AREA */
+
+        .post-area {
+            flex: 1;
+
+            background: white;
+
+            padding: 25px;
+
+            border-radius: 10px;
+
+            min-height: 600px;
+        }
+
+        .post {
+            display: none;
+        }
+
+        .active-post {
+            display: block;
+        }
+
+        .post h2 {
+            margin-bottom: 20px;
+            color: #0b2b1a;
+        }
+
+        .post p {
+            line-height: 1.8;
+            margin-bottom: 18px;
+            color: #444;
+        }
+
+        /* POST 4 */
+
+        #post4.active-post {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .sangay-title {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .sangay-img-card {
+            width: 400px;
+
+            background: #5bc255;
+
+            border-radius: 10px;
+
+            overflow: hidden;
+
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+            transition: 0.3s;
+        }
+
+        .sangay-img-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .sangay-img-card img {
+            width: 100%;
+            height: 220px;
+
+            object-fit: cover;
+        }
+
+        .sangay-card {
+            padding: 18px;
+        }
+
+        .card-title {
+            margin-bottom: 10px;
+        }
+
+        .card-description {
+            line-height: 1.6;
+        }
